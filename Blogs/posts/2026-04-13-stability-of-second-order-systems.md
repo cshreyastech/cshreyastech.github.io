@@ -303,3 +303,16 @@ plt.xlabel("$x_1$")
 plt.ylabel("$x_2$")
 plt.title("Stable Focus")
 plt.show()
+```
+---
+
+## 3. Final Takeaways
+* The stability of a second-order linear system is determined by the eigenvalues of $A$.
+* Two negative real eigenvalues produce a stable node.
+* Two positive real eigenvalues produce an unstable node.
+* Purely imaginary eigenvalues produce a center, where trajectories circle but do not converge.
+* Complex eigenvalues with negative real part produce a stable focus, where trajectories spiral inward.
+* Complex eigenvalues with positive real part produce an unstable focus, where trajectories spiral outward.
+* One positive and one negative real eigenvalue produce a saddle point, which is always unstable.
+* A phase portrait turns these cases into something visual and intuitive.
+* Drake makes this especially effective because it lets you simulate the system and see the geometry directly.
