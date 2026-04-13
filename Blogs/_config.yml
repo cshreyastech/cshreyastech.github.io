@@ -1,0 +1,22 @@
+title: Shreyas Blog
+description: Notes on robotics, control systems, AI, and research
+theme: minima
+
+# For personal site repo:
+url: "https://cshreyastech.github.io"
+baseurl: ""
+
+# For project site repo instead, use:
+# url: "https://yourusername.github.io"
+# baseurl: "/your-repo-name"
+
+markdown: kramdown
+
+header_pages:
+  - about.md
+
+minima:
+  social_links:
+    - title: github
+      icon: github
+      url: https://github.com/cshreyastech

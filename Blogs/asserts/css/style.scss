@@ -1,0 +1,17 @@
+---
+---
+
+@import "minima";
+
+/* Small custom tweaks */
+body {
+  font-size: 18px;
+}
+
+.post-content h2, .post-content h3 {
+  margin-top: 1.5rem;
+}
+
+.wrapper {
+  max-width: 900px;
+}
