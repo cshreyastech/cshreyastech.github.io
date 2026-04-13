@@ -14,15 +14,15 @@ $$
 \dot{x} = Ax, \qquad A \in \mathbb{R}^{2\times 2},
 $$
 
-the origin is usually the key equilibrium point, and its behavior is determined by the eigenvalues of \(A\). Depending on those eigenvalues, the origin can behave like a **node**, **center**, **focus**, or **saddle**. That exact classification is also how the lecture notes organize second-order systems. :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1}
+the origin is usually the key equilibrium point, and its behavior is determined by the eigenvalues of \(A\). Depending on those eigenvalues, the origin can behave like a **node**, **center**, **focus**, or **saddle**. That exact classification is also how the lecture notes organize second-order systems.
 
-What makes this topic interesting is that stability is not just algebra. It is geometric. A phase portrait lets you see whether trajectories move toward the origin, rotate around it, or escape away from it. The Drake notebook you shared builds this intuition nicely by defining a reusable `LinearDynamicsSystem` class, simulating \(\dot{x}=Ax\) using `SymbolicVectorSystem`, and plotting trajectories together with `plot_2d_phase_portrait`. It then compares multiple matrices side by side to show the different equilibrium types visually. :contentReference[oaicite:2]{index=2}
+What makes this topic interesting is that stability is not just algebra. It is geometric. A phase portrait lets you see whether trajectories move toward the origin, rotate around it, or escape away from it. [This drake notebook](https://github.com/cshreyastech/Learnings/blob/ControlSystems/NPTEL_non_linear_dynamics/01_Lec01_introduction/03_lecture3_second_order_systems.ipynb) builds this intuition nicely by defining a reusable `LinearDynamicsSystem` class, simulating $$ \(\dot{x}=Ax\) $$ using `SymbolicVectorSystem`, and plotting trajectories together with `plot_2d_phase_portrait`. It then compares multiple matrices side by side to show the different equilibrium types visually.
 
 ---
 
 ## Why phase portraits are so useful
 
-A phase portrait places an arrow at every point in the \((x_1, x_2)\) plane. That arrow tells you the direction of motion from that state. Once those arrows are drawn, the qualitative behavior becomes almost immediate:
+A phase portrait places an arrow at every point in the $$ \((x_1, x_2)\) $$ plane. That arrow tells you the direction of motion from that state. Once those arrows are drawn, the qualitative behavior becomes almost immediate:
 
 - arrows pointing inward suggest attraction,
 - arrows pointing outward suggest instability,
@@ -186,7 +186,7 @@ A saddle happens when one eigenvalue is negative and the other is positive. The 
 
 This is a subtle but important equilibrium type. Along one direction, the flow moves toward the origin. Along another, it moves away. So even though some trajectories approach the equilibrium, the equilibrium itself is still unstable.
 
-That is why the notebook title, **Attractivity vs Stability**, is a useful framing device. A system can have directions that look attractive and still fail to be stable overall. The first-order lecture notes make the same conceptual distinction in a simpler setting: whether nearby trajectories merely stay close or actually move toward an equilibrium are related but different questions. :contentReference[oaicite:16]{index=16} :contentReference[oaicite:17]{index=17}
+That is why the notebook title, **Attractivity vs Stability**, is a useful framing device. A system can have directions that look attractive and still fail to be stable overall. The first-order lecture notes make the same conceptual distinction in a simpler setting: whether nearby trajectories merely stay close or actually move toward an equilibrium are related but different questions.
 
 ---
 
@@ -241,9 +241,9 @@ The notebook does something useful beyond the standard classification: it also i
 \end{bmatrix}
 ```
 
-These are labeled in the notebook as cases with one eigenvalue at zero, two eigenvalues at zero, and non-diagonalizable zero-eigenvalue cases. :contentReference[oaicite:19]{index=19}
+These are labeled in the notebook as cases with one eigenvalue at zero, two eigenvalues at zero, and non-diagonalizable zero-eigenvalue cases.
 
-That is valuable because the lecture notes explicitly point out that repeated eigenvalues and zero eigenvalues need separate treatment. They are not covered cleanly by the simple “node-center-focus-saddle” rule and often require a more careful invariant-set or Jordan-form analysis. :contentReference[oaicite:20]{index=20}
+That is valuable because the lecture notes explicitly point out that repeated eigenvalues and zero eigenvalues need separate treatment. They are not covered cleanly by the simple “node-center-focus-saddle” rule and often require a more careful invariant-set or Jordan-form analysis.
 
 ---
 
