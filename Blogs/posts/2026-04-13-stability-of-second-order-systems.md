@@ -10,9 +10,9 @@ Second-order systems become much easier to understand once you stop looking at t
 
 For a linear system of the form
 
-\[
+$$
 \dot{x} = Ax, \qquad A \in \mathbb{R}^{2\times 2},
-\]
+$$
 
 the origin is usually the key equilibrium point, and its behavior is determined by the eigenvalues of \(A\). Depending on those eigenvalues, the origin can behave like a **node**, **center**, **focus**, or **saddle**. That exact classification is also how the lecture notes organize second-order systems. :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1}
 
@@ -37,9 +37,9 @@ This is the same visual reasoning used in the lecture notes when discussing seco
 
 The notebook uses Drake to construct and simulate systems of the form
 
-\[
+$$
 \dot{x} = Ax.
-\]
+$$
 
 It defines a helper class called `LinearDynamicsSystem` that:
 
@@ -57,7 +57,7 @@ That is a clean workflow for learning stability because it turns each matrix int
 
 The notebook starts with four simple examples, including two node cases and two center cases. The node examples use the matrices
 
-\[
+```math
 A =
 \begin{bmatrix}
 -1 & 0\\
@@ -68,8 +68,8 @@ A =
 \begin{bmatrix}
 1 & 0\\
 0 & 2
-\end{bmatrix},
-\]
+\end{bmatrix}
+```
 
 labeled in the notebook as **Stable Node** and **Unstable Node**. :contentReference[oaicite:5]{index=5}
 
@@ -95,7 +95,7 @@ So the geometry changes completely even though the system structure looks almost
 
 The notebook then uses the matrices
 
-\[
+```math
 A =
 \begin{bmatrix}
 0 & 3\\
@@ -106,8 +106,8 @@ A =
 \begin{bmatrix}
 0 & -3\\
 3 & 0
-\end{bmatrix},
-\]
+\end{bmatrix}
+```
 
 labeled **Center Clockwise** and **Center Counterclockwise**. :contentReference[oaicite:8]{index=8}
 
