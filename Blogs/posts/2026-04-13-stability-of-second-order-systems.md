@@ -22,7 +22,7 @@ What makes this topic interesting is that stability is not just algebra. It is g
 
 ## Why phase portraits are so useful
 
-A phase portrait places an arrow at every point in the $$ \((x_1, x_2)\) $$ plane. That arrow tells you the direction of motion from that state. Once those arrows are drawn, the qualitative behavior becomes almost immediate:
+A phase portrait places an arrow at every point in the `(x1, x2)` $$ plane. That arrow tells you the direction of motion from that state. Once those arrows are drawn, the qualitative behavior becomes almost immediate:
 
 - arrows pointing inward suggest attraction,
 - arrows pointing outward suggest instability,
@@ -43,7 +43,7 @@ $$
 
 It defines a helper class called `LinearDynamicsSystem` that:
 
-1. stores a \(2\times2\) matrix \(A\),
+1. stores a matrix A,
 2. builds a Drake `SymbolicVectorSystem`,
 3. simulates trajectories from chosen initial conditions,
 4. plots the vector field and trajectories on the same axes,
@@ -52,10 +52,11 @@ It defines a helper class called `LinearDynamicsSystem` that:
 That is a clean workflow for learning stability because it turns each matrix into something you can immediately see.
 
 ---
+## Different types of Equilibrium points
 
-## 1. Stable and unstable nodes
+### 1. Stable and unstable nodes
 
-The notebook starts with four simple examples, including two node cases and two center cases. The node examples use the matrices
+Lets start with four simple examples, including two node cases and two center cases. The node examples use the matrices
 
 ```math
 A =
@@ -73,15 +74,16 @@ A =
 
 labeled in the notebook as **Stable Node** and **Unstable Node**.
 
-### Stable node
+#### Stable node
 
 When both eigenvalues are real and negative, trajectories move toward the origin. There is no rotation here because the matrix is diagonal, so the motion is aligned with the coordinate axes. In the lecture notes, this is described as a stable node: distinct real eigenvalues, both negative, with arrows directed toward the origin.
 
 <!-- Insert figure here: Stable Node plot from the notebook -->
+![Stable node](/home/shreyas/Downloads/01-Node_Center.png)
 
 This is the cleanest picture of asymptotic stability. Nearby states not only remain close to the equilibrium, they eventually converge to it.
 
-### Unstable node
+#### Unstable node
 
 If both eigenvalues are real and positive, the picture flips. All nearby trajectories move away from the origin. The lecture notes classify this as an unstable node: distinct real eigenvalues, both positive.
 
@@ -91,7 +93,7 @@ So the geometry changes completely even though the system structure looks almost
 
 ---
 
-## 2. Centers: motion without convergence
+### 2. Centers: motion without convergence
 
 The notebook then uses the matrices
 
@@ -215,9 +217,9 @@ That distinction explains the phase portraits nicely:
 
 ---
 
-## What the extra notebook examples show
+## Beyond the standard classification
 
-The notebook does something useful beyond the standard classification: it also includes matrices with one or two zero eigenvalues, such as
+Beyond the standard classification: it also includes matrices with one or two zero eigenvalues, such as
 
 ```math
 \begin{bmatrix}
@@ -241,9 +243,11 @@ The notebook does something useful beyond the standard classification: it also i
 \end{bmatrix}
 ```
 
-These are labeled in the notebook as cases with one eigenvalue at zero, two eigenvalues at zero, and non-diagonalizable zero-eigenvalue cases.
+One eigenvalue at zero, two eigenvalues at zero, and non-diagonalizable zero-eigenvalue cases.
 
-That is valuable because the lecture notes explicitly point out that repeated eigenvalues and zero eigenvalues need separate treatment. They are not covered cleanly by the simple “node-center-focus-saddle” rule and often require a more careful invariant-set or Jordan-form analysis.
+This is the effect of repeated eigenvalues and zero eigenvalues need separate treatment. They are not covered by the simple “node-center-focus-saddle” rule and often require a more careful invariant-set or Jordan-form analysis.
+
+<!-- Insert figure here: Saddle Point plot from the notebook -->
 
 ---
 
