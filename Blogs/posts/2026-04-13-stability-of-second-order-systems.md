@@ -29,7 +29,7 @@ A phase portrait places an arrow at every point in the $$ \((x_1, x_2)\) $$ plan
 - arrows that rotate without shrinking create closed orbits,
 - arrows that rotate while shrinking or growing create spirals.
 
-This is the same visual reasoning used in the lecture notes when discussing second-order systems: stable node, unstable node, center, stable focus, unstable focus, and saddle point are all distinguished by their flow pattern in the phase plane. :contentReference[oaicite:3]{index=3}
+This is the same visual reasoning used in the lecture notes when discussing second-order systems: stable node, unstable node, center, stable focus, unstable focus, and saddle point are all distinguished by their flow pattern in the phase plane.
 
 ---
 
@@ -47,7 +47,7 @@ It defines a helper class called `LinearDynamicsSystem` that:
 2. builds a Drake `SymbolicVectorSystem`,
 3. simulates trajectories from chosen initial conditions,
 4. plots the vector field and trajectories on the same axes,
-5. compares multiple systems in a grid. :contentReference[oaicite:4]{index=4}
+5. compares multiple systems in a grid.
 
 That is a clean workflow for learning stability because it turns each matrix into something you can immediately see.
 
@@ -71,11 +71,11 @@ A =
 \end{bmatrix}
 ```
 
-labeled in the notebook as **Stable Node** and **Unstable Node**. :contentReference[oaicite:5]{index=5}
+labeled in the notebook as **Stable Node** and **Unstable Node**.
 
 ### Stable node
 
-When both eigenvalues are real and negative, trajectories move toward the origin. There is no rotation here because the matrix is diagonal, so the motion is aligned with the coordinate axes. In the lecture notes, this is described as a stable node: distinct real eigenvalues, both negative, with arrows directed toward the origin. :contentReference[oaicite:6]{index=6}
+When both eigenvalues are real and negative, trajectories move toward the origin. There is no rotation here because the matrix is diagonal, so the motion is aligned with the coordinate axes. In the lecture notes, this is described as a stable node: distinct real eigenvalues, both negative, with arrows directed toward the origin.
 
 <!-- Insert figure here: Stable Node plot from the notebook -->
 
@@ -83,7 +83,7 @@ This is the cleanest picture of asymptotic stability. Nearby states not only rem
 
 ### Unstable node
 
-If both eigenvalues are real and positive, the picture flips. All nearby trajectories move away from the origin. The lecture notes classify this as an unstable node: distinct real eigenvalues, both positive. :contentReference[oaicite:7]{index=7}
+If both eigenvalues are real and positive, the picture flips. All nearby trajectories move away from the origin. The lecture notes classify this as an unstable node: distinct real eigenvalues, both positive.
 
 <!-- Insert figure here: Unstable Node plot from the notebook -->
 
@@ -109,14 +109,14 @@ A =
 \end{bmatrix}
 ```
 
-labeled **Center Clockwise** and **Center Counterclockwise**. :contentReference[oaicite:8]{index=8}
+labeled **Center Clockwise** and **Center Counterclockwise**.
 
-These correspond to purely imaginary eigenvalues. In the lecture notes, this case is called a **center**. The trajectories form periodic orbits around the origin, and the sign pattern in the off-diagonal entries determines clockwise versus counterclockwise rotation. :contentReference[oaicite:9]{index=9}
+These correspond to purely imaginary eigenvalues. In the lecture notes, this case is called a **center**. The trajectories form periodic orbits around the origin, and the sign pattern in the off-diagonal entries determines clockwise versus counterclockwise rotation. 
 
 <!-- Insert figure here: Center Clockwise plot from the notebook -->
 <!-- Insert figure here: Center Counterclockwise plot from the notebook -->
 
-A center is an important reminder that **stability does not always mean convergence**. Trajectories stay near the origin if they start near it, but they do not spiral in. They keep circling forever. The lecture notes emphasize this point clearly: for linear systems with purely imaginary eigenvalues, you get a continuum of periodic orbits rather than a single isolated orbit. :contentReference[oaicite:10]{index=10}
+A center is an important reminder that **stability does not always mean convergence**. Trajectories stay near the origin if they start near it, but they do not spiral in. They keep circling forever. The lecture notes emphasize this point clearly: for linear systems with purely imaginary eigenvalues, you get a continuum of periodic orbits rather than a single isolated orbit.
 
 ---
 
@@ -137,11 +137,11 @@ A =
 2 & 1
 \end{bmatrix}
 ```
-labeled **Stable focus** and **Unstable focus**. :contentReference[oaicite:11]{index=11}
+labeled **Stable focus** and **Unstable focus**.
 
 ### Stable focus
 
-A stable focus occurs when the eigenvalues are complex and their real part is negative. The off-diagonal entries create rotation, while the negative real part pulls trajectories inward. The result is a spiral that approaches the origin asymptotically. The lecture notes describe this exactly as a stable focus: rotation plus inward motion. :contentReference[oaicite:12]{index=12}
+A stable focus occurs when the eigenvalues are complex and their real part is negative. The off-diagonal entries create rotation, while the negative real part pulls trajectories inward. The result is a spiral that approaches the origin asymptotically. The lecture notes describe this exactly as a stable focus: rotation plus inward motion.
 
 <!-- Insert figure here: Stable Focus plot from the notebook -->
 
@@ -149,7 +149,7 @@ This is one of the most common phase portraits in control systems because many d
 
 ### Unstable focus
 
-If the real part becomes positive, the spiral reverses in the stability sense: it still rotates, but now trajectories grow away from the origin. That is the unstable focus. The lecture notes classify this as the complex-eigenvalue case with positive real part. :contentReference[oaicite:13]{index=13}
+If the real part becomes positive, the spiral reverses in the stability sense: it still rotates, but now trajectories grow away from the origin. That is the unstable focus. The lecture notes classify this as the complex-eigenvalue case with positive real part.
 
 <!-- Insert figure here: Unstable Focus plot from the notebook -->
 
@@ -178,9 +178,9 @@ A =
 \end{bmatrix}
 ```
 
-both labeled **Saddle Point**. :contentReference[oaicite:14]{index=14}
+both labeled **Saddle Point**.
 
-A saddle happens when one eigenvalue is negative and the other is positive. The lecture notes use this exact diagonal idea and show that one component decays while the other grows, which makes the origin unstable overall. :contentReference[oaicite:15]{index=15}
+A saddle happens when one eigenvalue is negative and the other is positive. The lecture notes use this exact diagonal idea and show that one component decays while the other grows, which makes the origin unstable overall.
 
 <!-- Insert figure here: Saddle Point plot from the notebook -->
 
@@ -211,7 +211,7 @@ That distinction explains the phase portraits nicely:
 - **stable node** → asymptotically stable,
 - **stable focus** → asymptotically stable,
 - **center** → stable but not attractive,
-- **saddle** → unstable. :contentReference[oaicite:18]{index=18}
+- **saddle** → unstable.
 
 ---
 
