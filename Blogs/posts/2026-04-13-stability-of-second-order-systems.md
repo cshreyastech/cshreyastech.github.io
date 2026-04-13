@@ -125,7 +125,6 @@ A center is an important reminder that **stability does not always mean converge
 The next group in the notebook uses
 
 ```math
-\[
 A =
 \begin{bmatrix}
 -1 & -2\\
@@ -136,8 +135,7 @@ A =
 \begin{bmatrix}
 1 & -2\\
 2 & 1
-\end{bmatrix},
-\]
+\end{bmatrix}
 ```
 labeled **Stable focus** and **Unstable focus**. :contentReference[oaicite:11]{index=11}
 
@@ -166,7 +164,7 @@ A simple mental model helps here:
 
 The notebook also includes the saddle examples
 
-\[
+```math
 A =
 \begin{bmatrix}
 -1 & 0\\
@@ -177,8 +175,8 @@ A =
 \begin{bmatrix}
 1 & 0\\
 0 & -2
-\end{bmatrix},
-\]
+\end{bmatrix}
+```
 
 both labeled **Saddle Point**. :contentReference[oaicite:14]{index=14}
 
@@ -221,7 +219,7 @@ That distinction explains the phase portraits nicely:
 
 The notebook does something useful beyond the standard classification: it also includes matrices with one or two zero eigenvalues, such as
 
-\[
+```math
 \begin{bmatrix}
 1 & 0\\
 0 & 0
@@ -240,8 +238,8 @@ The notebook does something useful beyond the standard classification: it also i
 \begin{bmatrix}
 0 & 0\\
 1 & 0
-\end{bmatrix}.
-\]
+\end{bmatrix}
+```
 
 These are labeled in the notebook as cases with one eigenvalue at zero, two eigenvalues at zero, and non-diagonalizable zero-eigenvalue cases. :contentReference[oaicite:19]{index=19}
 
