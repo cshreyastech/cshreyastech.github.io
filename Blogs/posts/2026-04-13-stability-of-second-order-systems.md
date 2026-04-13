@@ -124,6 +124,7 @@ A center is an important reminder that **stability does not always mean converge
 
 The next group in the notebook uses
 
+```math
 \[
 A =
 \begin{bmatrix}
@@ -137,7 +138,7 @@ A =
 2 & 1
 \end{bmatrix},
 \]
-
+```
 labeled **Stable focus** and **Unstable focus**. :contentReference[oaicite:11]{index=11}
 
 ### Stable focus
