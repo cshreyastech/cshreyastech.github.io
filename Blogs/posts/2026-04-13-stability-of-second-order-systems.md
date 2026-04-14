@@ -84,7 +84,7 @@ This is the cleanest picture of asymptotic stability. Nearby states not only rem
 
 If both eigenvalues are real and positive, the picture flips. All nearby trajectories move away from the origin. The lecture notes classify this as an unstable node: distinct real eigenvalues, both positive.
 
-![My Project Diagram](../asserts/images/2026-04-13-stability-of-second-order-systems/01_Node.png)
+![Node](../asserts/images/2026-04-13-stability-of-second-order-systems/01_Node.png)
 
 /mnt/localcodebase/Courses/cshreyastech.github.io/Blogs/asserts/images/2026-04-13-stability-of-second-order-systems
 So the geometry changes completely even though the system structure looks almost identical. The sign of the eigenvalues is doing all the work.
@@ -113,8 +113,7 @@ labeled **Center Clockwise** and **Center Counterclockwise**.
 
 These correspond to purely imaginary eigenvalues. In the lecture notes, this case is called a **center**. The trajectories form periodic orbits around the origin, and the sign pattern in the off-diagonal entries determines clockwise versus counterclockwise rotation. 
 
-<!-- Insert figure here: Center Clockwise plot from the notebook -->
-<!-- Insert figure here: Center Counterclockwise plot from the notebook -->
+![Center](../asserts/images/2026-04-13-stability-of-second-order-systems/02_Center.png)
 
 A center is an important reminder that **stability does not always mean convergence**. Trajectories stay near the origin if they start near it, but they do not spiral in. They keep circling forever. The lecture notes emphasize this point clearly: for linear systems with purely imaginary eigenvalues, you get a continuum of periodic orbits rather than a single isolated orbit.
 
@@ -143,15 +142,13 @@ labeled **Stable focus** and **Unstable focus**.
 
 A stable focus occurs when the eigenvalues are complex and their real part is negative. The off-diagonal entries create rotation, while the negative real part pulls trajectories inward. The result is a spiral that approaches the origin asymptotically. The lecture notes describe this exactly as a stable focus: rotation plus inward motion.
 
-<!-- Insert figure here: Stable Focus plot from the notebook -->
-
 This is one of the most common phase portraits in control systems because many damped oscillatory systems look like this.
 
 ### Unstable focus
 
 If the real part becomes positive, the spiral reverses in the stability sense: it still rotates, but now trajectories grow away from the origin. That is the unstable focus. The lecture notes classify this as the complex-eigenvalue case with positive real part.
 
-<!-- Insert figure here: Unstable Focus plot from the notebook -->
+![Focus](../asserts/images/2026-04-13-stability-of-second-order-systems/03_Focus.png)
 
 A simple mental model helps here:
 
@@ -182,7 +179,7 @@ both labeled **Saddle Point**.
 
 A saddle happens when one eigenvalue is negative and the other is positive. The lecture notes use this exact diagonal idea and show that one component decays while the other grows, which makes the origin unstable overall.
 
-<!-- Insert figure here: Saddle Point plot from the notebook -->
+![Saddle Point](../asserts/images/2026-04-13-stability-of-second-order-systems/04_Saddle_point.png)
 
 This is a subtle but important equilibrium type. Along one direction, the flow moves toward the origin. Along another, it moves away. So even though some trajectories approach the equilibrium, the equilibrium itself is still unstable.
 
@@ -245,7 +242,7 @@ One eigenvalue at zero, two eigenvalues at zero, and non-diagonalizable zero-eig
 
 This is the effect of repeated eigenvalues and zero eigenvalues need separate treatment. They are not covered by the simple “node-center-focus-saddle” rule and often require a more careful invariant-set or Jordan-form analysis.
 
-<!-- Insert figure here: Saddle Point plot from the notebook -->
+![Eigenvalues at Origin](../asserts/images/2026-04-13-stability-of-second-order-systems/05_Eigen_at_orgin.png)
 
 ---
 
