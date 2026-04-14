@@ -78,17 +78,15 @@ labeled in the notebook as **Stable Node** and **Unstable Node**.
 
 When both eigenvalues are real and negative, trajectories move toward the origin. There is no rotation here because the matrix is diagonal, so the motion is aligned with the coordinate axes. In the lecture notes, this is described as a stable node: distinct real eigenvalues, both negative, with arrows directed toward the origin.
 
-<!-- Insert figure here: Stable Node plot from the notebook -->
-![Stable node](/home/shreyas/Downloads/01-Node_Center.png)
-
 This is the cleanest picture of asymptotic stability. Nearby states not only remain close to the equilibrium, they eventually converge to it.
 
 #### Unstable node
 
 If both eigenvalues are real and positive, the picture flips. All nearby trajectories move away from the origin. The lecture notes classify this as an unstable node: distinct real eigenvalues, both positive.
 
-<!-- Insert figure here: Unstable Node plot from the notebook -->
+![My Project Diagram](../asserts/images/2026-04-13-stability-of-second-order-systems/01_Node.png)
 
+/mnt/localcodebase/Courses/cshreyastech.github.io/Blogs/asserts/images/2026-04-13-stability-of-second-order-systems
 So the geometry changes completely even though the system structure looks almost identical. The sign of the eigenvalues is doing all the work.
 
 ---
